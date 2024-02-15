@@ -1,0 +1,129 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Red Hat Display', sans-serif;
+    text-align: center;
+    background-image: url("../images/pattern-background-desktop.svg");
+    background-color: hsl(225, 100%, 94%);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+h1,h4 {
+    font-weight: 900;
+}
+
+h1 {
+    padding-bottom: 1rem;
+}
+
+p {
+    font-size: 1rem;
+    font-weight: 500;
+    color: hsl(224, 23%, 55%);
+}
+
+main {
+    width: 26rem;
+    background-color: #fff;
+    border-radius: 1rem;
+    
+}
+
+.main-container {
+    padding: 2.2rem;    
+}
+
+.main-p {
+    padding-bottom: 1rem;
+} 
+
+.plan {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 0.5rem;
+}
+
+.plan-text {
+    position: absolute;
+    padding-left: 4rem;
+}
+
+.change {
+    font-weight: 900;
+    font-size: 0.8rem;
+    color: #5349d2;
+    transition: .3s;
+}
+
+.change:hover {
+    color: #776df1;
+    text-decoration: none;
+}
+
+.payment {
+    display: block;
+    margin-top: 2rem;
+    padding: 0.8rem;
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.8rem;
+    font-weight: 900;
+    background-color: #392ae0;
+    border-radius: 0.5rem;
+    box-shadow:0 1rem 2rem -1rem #392ae0;
+    transition: .3s;
+}
+
+.payment:hover {
+    background-color: #776df1;
+}
+
+.cancel-order {
+    display: block;
+    font-weight: 900;
+    font-size: 0.8rem;
+    padding-top: 1.5rem;
+    color: hsl(224, 23%, 55%);
+    text-decoration: none;
+}
+
+.cancel-order:hover {
+    color: #000;
+}
+
+.hero-image {
+    width: 100%;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.plan img {
+    padding-right: 1rem;
+}
+
+@media only screen and (max-width: 400px) {
+   
+    body {
+        background-image: url("../images/pattern-background-mobile.svg")
+    
+    }
+
+    main {
+        width: 90%;
+        margin: 10% auto;
+    }
+
+}
